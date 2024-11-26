@@ -86,3 +86,15 @@ weeks = (days % 365) // 7
 days = (days % 365) % 7
 
 print(f"Years calculated: {years}" + "\n" + f"Weeks calculated: {weeks}" + "\n" + f"Days calculated: {days}")
+
+
+# -------------------------------------------------------------------
+# 8. Given a list of integers, find the sum of all positive numbers
+
+
+# -------------------------------------------------------------------
+# 9. Create a program that takes a sentence as input and counts the number of words in the sentence
+
+
+# -------------------------------------------------------------------
+# 10. Implement a program that swaps the values of two variables 
