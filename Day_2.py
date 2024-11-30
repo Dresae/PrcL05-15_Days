@@ -101,6 +101,10 @@ print("The area of the circle is:", area)
 
 # -------------------------------------------------------------------
 # 8. Implement a program that converts a given number of minutes into hours and minutes
+minutes = int(input("Enter the number of minutes: "))
+hours = minutes // 60
+minutes = minutes % 60
+print(f"{hours} hours and {minutes} minutes")
 
 
 # -------------------------------------------------------------------
