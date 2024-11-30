@@ -91,6 +91,11 @@ print(f"Years calculated: {years}" + "\n" + f"Weeks calculated: {weeks}" + "\n" 
 # -------------------------------------------------------------------
 # 8. Given a list of integers, find the sum of all positive numbers
 
+numbers = [13, 64, 24, 10, 74, 97, 50, 52, 13, 24, 68, 85, 61, 69, 45, 43, 20, 90, 83, 4]
+
+positive_sum = sum([x for x in numbers if x > 0])
+print("The sum of all positive numbers in the list is:", positive_sum)
+
 
 # -------------------------------------------------------------------
 # 9. Create a program that takes a sentence as input and counts the number of words in the sentence
