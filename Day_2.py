@@ -94,6 +94,21 @@ else:
 
 # -------------------------------------------------------------------
 # 7. calculate the area and circle given its radius
+import math
+radius = float(input("Enter the radius of the circle: "))
+area = math.pi * (radius ** 2)
+print("The area of the circle is:", area)
+
+# -------------------------------------------------------------------
+# 8. Implement a program that converts a given number of minutes into hours and minutes
+
+
+# -------------------------------------------------------------------
+# 9. Create a function to to count the number of vowels in a given string
+
+
+# -------------------------------------------------------------------
+# 10. Write a program to check if a number is prime
 
 
 
