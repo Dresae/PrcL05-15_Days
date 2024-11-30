@@ -100,6 +100,10 @@ print("The sum of all positive numbers in the list is:", positive_sum)
 # -------------------------------------------------------------------
 # 9. Create a program that takes a sentence as input and counts the number of words in the sentence
 
+sentence = input("Enter a sentence: ")
+word_count = len(sentence.split())
+print("The number of words in the sentence is:", word_count)
+
 
 # -------------------------------------------------------------------
 # 10. Implement a program that swaps the values of two variables 
