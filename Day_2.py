@@ -106,9 +106,17 @@ hours = minutes // 60
 minutes = minutes % 60
 print(f"{hours} hours and {minutes} minutes")
 
-
 # -------------------------------------------------------------------
-# 9. Create a function to to count the number of vowels in a given string
+# 9. Create a function to count the number of vowels in a input string
+def count_vowels(string):
+    count = 0
+    for char in string:
+        if char in ['a', 'e', 'i', 'o', 'u']:
+            count += 1
+    return count
+
+input_string = input("Enter a string: ")
+print(f"The number of vowels in the string is: {count_vowels(input_string)}")
 
 
 # -------------------------------------------------------------------
