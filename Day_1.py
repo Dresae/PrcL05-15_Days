@@ -107,3 +107,11 @@ print("The number of words in the sentence is:", word_count)
 
 # -------------------------------------------------------------------
 # 10. Implement a program that swaps the values of two variables 
+
+a = 10
+b = 20
+
+print("Before swapping: a =", a, "and b =", b)
+
+a, b = b, a
+print("After swapping: a =", a, "and b =", b)
