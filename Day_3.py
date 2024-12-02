@@ -94,3 +94,57 @@ names = ["Alice", "Bob", "Charlie", "David", "Eva", "Frank", "Anne", "Grace", "H
 for name in names:
     if name.startswith("A"):
         print(name)
+
+
+# -------------------------------------------------------------------
+# 9. Implement a program that prints the multiplication table of a given number
+
+number = int(input("Enter a number: "))
+for i in range(1, 11):
+    print(number, "x", i, "=", number * i)
+
+
+# -------------------------------------------------------------------
+# 10. Write a program that calculates the factorial of a given number
+
+number = int(input("Enter a number: "))
+factorial = 1
+for i in range(1, number + 1):
+    factorial *= i
+print("The factorial of", number, "is", factorial)
+
+
+# -------------------------------------------------------------------
+# 11. Create a loop that prints all the prime numbers between 1 anf 100
+
+for num in range(2, 101):
+    is_prime = True
+    for i in range(2, num):
+        if num % i == 0:
+            is_prime = False
+            break
+    if is_prime:
+        print(num)
+
+
+# -------------------------------------------------------------------
+# 12. Given a list of numbers, find the sum of all the even numbers in the list
+
+numbers = [13, 64, 24, 10, 74, 97, 50, 52, 13, 24, 68, 85, 61, 69, 45, 43, 20, 90, 83, 4]
+sum = 0
+for num in numbers:
+    if num % 2 == 0:
+        sum += num
+print("The sum of all the even numbers in the list is:", sum)
+
+# -------------------------------------------------------------------
+# 13. Calculate the sum of digits of a given number
+
+number = int(input("Enter a number: "))
+sum = 0
+while number > 0:
+    digit = number % 10
+    sum += digit
+    number //= 10
+print("The sum of digits", "is", sum)
+# -------------------------------------------------------------------
