@@ -66,3 +66,75 @@ def check_even_odd(number):
         return "Odd"
 
 check_even_odd(4)
+
+# -------------------------------------------------------------------
+# 6. Calculate the area of a triangle given its base and height using a function
+def calculate_area(base, height):
+    return 0.5 * base * height  
+
+calculate_area(10, 5)
+
+# -------------------------------------------------------------------
+# 7. Create a function that takes a list of strings and returns the list sorted alphabetically
+def sort_strings(strings):
+    return sorted(strings)
+
+sort_strings(["apple", "banana", "cherry", "date"])
+
+# -------------------------------------------------------------------
+# 8. Write a function that takes two lists and return their intersection(common elements)
+def intersection(list1, list2):
+    return list(set(list1) & set(list2))
+
+intersection([1, 2, 3, 4], [3, 4, 5, 6])
+# -------------------------------------------------------------------
+# 9. Implement a function that checks if a given year is leap or not
+def is_leap_year(year):
+    return (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0)
+
+is_leap_year(2000)
+
+# -------------------------------------------------------------------
+# 10. Create a function that takes a number as input and prints its multiplication table
+
+number = int(input("Enter a number here: "))
+def multiplication_table(num):
+    for i in range(1, 11):
+        print(f"{num} x {i} = {num * i}")
+
+multiplication_table(number)
+
+# -------------------------------------------------------------------
+# 11. Write a function to calculate the area of a circle given its radius and round it to two decimals
+import math
+def calculate_area(radius):
+    return math.pi * (radius ** 2)
+
+round(calculate_area(5),2)
+
+# -------------------------------------------------------------------
+# 12. Create a function to check if a given number is prime
+def is_prime(num):
+    if num <= 1:
+        return False
+    if num <= 3:
+        return True
+    if num % 2 == 0 or num % 3 == 0:
+        return False
+    i = 5
+    while i * i <= num:
+        if num % i == 0 or num % (i + 2) == 0:
+            return False
+        i += 6
+    return True
+
+is_prime(139)
+
+# -------------------------------------------------------------------
+# 13. Implement a function that reverses a given string
+def reverse_string(string):
+    return string[::-1]
+
+reverse_string("This a sample text")
+
+# -------------------------------------------------------------------
