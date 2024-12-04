@@ -1,4 +1,4 @@
-"""Day 3 Challenge - Function
+"""Day 4 Challenge - Function
 ==========================
 1. Given a list of numbers, create a function to find the sum of all positive numbers
 2. Write a Python function that checks if a given string is a palindrome
