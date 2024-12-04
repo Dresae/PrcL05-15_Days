@@ -50,3 +50,46 @@ def remove_vowels(string):
 remove_vowels("char for char in string iterates over each character in the variable") 
 
 # -------------------------------------------------------------------
+# 6. Write a Python program to find the length onf the longest word in a sentence
+def find_longest_word(sentence):
+    words = sentence.split()
+    return max(words, key=len)
+find_longest_word("This is a test for the function to find the longest word")
+
+# -------------------------------------------------------------------
+# 7. Create a function that takes a sentence as input and returns the sentence in reverse order
+sentence = input("Enter a long sentence: ")
+def reverse_sentence(sentence):
+    return ' '.join(reversed(sentence.split()))
+reverse_sentence(sentence)
+
+# -------------------------------------------------------------------
+# 8. Given a list of names, count the number of names that start with a vowel
+
+word_list = ['Mariah', 'Louise', 'Elvis', 'Carolina', 'Michael', 'Andres', 'Antony']
+def count_starting_vowel(word_list):
+    vowels = ('a', 'e', 'i', 'o', 'u')
+    count = 0
+
+    for word in word_list:
+        if word[0].lower() in vowels:
+            count += 1
+    return count
+count_starting_vowel(word_list)
+
+
+# -------------------------------------------------------------------
+# 9. Write a function to remove all dulicate characters from a sentence
+def remove_duplicates(sentence):
+    return ''.join(set(sentence))
+remove_duplicates("This is a test for the function to remove duplicates")
+
+# -------------------------------------------------------------------
+# 10. Implement a program that takes a sentence and a word as input and checks if the word is present in the sentence
+sentence = input("Enter a sentence: ")
+word = input("Enter a word: ")
+def check_word(sentence, word):
+    return word in sentence
+check_word(sentence, word)
+
+# -------------------------------------------------------------------
