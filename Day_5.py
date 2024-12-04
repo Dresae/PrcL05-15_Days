@@ -28,3 +28,25 @@ count_vowels("This is a text for testing the function")
 def concatenate_words(words):
     return ' '.join(words)
 concatenate_words(["This", "is", "a", "test"])
+
+# -------------------------------------------------------------------
+# 3. Create a function to reverse a given string
+def reverse_string(string):
+    return string[::-1] 
+reverse_string(["Test", "another", "is", "This"])
+
+# -------------------------------------------------------------------
+# 4. Write a program that takes a string as input and counts the number of words in it
+
+string = input("Enter a sentence: ")
+def count_words(string):
+    return len(string.split())
+count_words(string)
+
+# -------------------------------------------------------------------
+# 5. Given a string, write a function to removes all vowels from it and returns the resulting string    
+def remove_vowels(string):
+    return ''.join([char for char in string if char not in 'aeiouAEIOU'])
+remove_vowels("char for char in string iterates over each character in the variable") 
+
+# -------------------------------------------------------------------
