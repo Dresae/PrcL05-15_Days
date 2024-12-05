@@ -7,7 +7,7 @@
 5. Given a list of words, find a word with the maximun length and its length
 6. Write a Python program to count the occurrences of each element in a given list
 7. Given a list of names, remove all duplicate names and print the unique names
-8. Create a function that takes a lists of strings and returns the list sorted by the of the strings
+8. Create a function that takes a lists of dictionaries and sorts them based on a specific key
 9. Write a program that checks if a given list is sorted in ascending order
 10. Implement a function that takes two lists and returns their union (all unique elements from both lists)
 11. Given a list of numbers, find the sum and average using built-in functions
@@ -71,3 +71,45 @@ for word in words:
 
 print("The word with the maximum length is:", max_word)
 print("The length of the word is:", max_length)
+
+# -------------------------------------------------------------------
+# 6. Write a Python program to count the occurrences of each element in a given list
+fruits = ["apple", "banana", "apple", "orange", "banana", "banana", "apple"]
+counts = {} # this empty dictionary is used to store the count of each element
+
+for fruit in fruits:     # here it will iterate over each element in the list
+    if fruit in counts:  # this checks if the found element is already in the dictionary
+        counts[fruit] += 1 # if the element is in the dictionary it will add one to its count
+    else:
+        counts[fruit] = 1 # when the element is not in the dictionary it will be added and set it counts to one '1'
+
+print(counts)
+
+# -------------------------------------------------------------------
+# 7. Given a list of names, remove all duplicate names and print the unique names
+
+names = ["John", "Alice", "Bob", "John", "Alice", "Alice", "Charlie", "Bob", "Charlie", "Alice"]
+unique_names = set(names) # the set method removes duplicates
+print(unique_names)
+
+# -------------------------------------------------------------------
+# 8. Create a function that takes a lists of dictionaries and sorts them based on a specific key
+
+def sort_dictionaries(dictionaries, key): # the main function with two arguments is created
+    return sorted(dictionaries, key=lambda x: x[key])   # Here it uses the sorted function to sort the dictionaries based on the second argument of the function, which is 'key'. 
+dictionaries = [
+    {"name": "Alice", "age": 25},
+    {"name": "Bob", "age": 30},
+    {"name": "Charlie", "age": 20},
+    {"name": "David", "age": 35},
+]
+
+sorted_dictionaries = sort_dictionaries(dictionaries, "age") # the dictionaries are sorted based on the 'age' key
+print(sorted_dictionaries)
+
+# -------------------------------------------------------------------
+# 9. Write a program that checks if a given list is sorted in ascending order
+
+numbers = [1, 2, 3, 4, 5]
+is_sorted = all(numbers[i] <= numbers[i + 1] for i in range(len(numbers) - 1))
+print(is_sorted)
