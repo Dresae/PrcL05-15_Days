@@ -113,3 +113,41 @@ print(sorted_dictionaries)
 numbers = [1, 2, 3, 4, 5]
 is_sorted = all(numbers[i] <= numbers[i + 1] for i in range(len(numbers) - 1))
 print(is_sorted)
+
+# -------------------------------------------------------------------
+# 10. Given a list of numbers, find the second largest number in the list
+
+numbers = [10, 5, 8, 20, 3, 15, 12]
+numbers.sort()
+second_largest = numbers[-2]
+print("The second largest number in the list is:", second_largest)
+
+# -------------------------------------------------------------------
+# 11. Implement a function that takes two lists and returns their union (all unique elements from both lists)
+
+list1 = [1, 2, 3, 4, 5]
+list2 = [4, 5, 6, 7, 8]
+
+union_list = list(set(list1) | set(list2)) # the set method is used to remove duplicates
+print(union_list)
+
+# -------------------------------------------------------------------
+# 12. Given a list of numbers, find the sum of all the even numbers in the list
+
+numbers = [13, 64, 24, 10, 74, 97, 50, 52, 13, 24, 68, 85, 61, 69, 45, 43, 20, 90, 83, 4]
+sum = 0
+for num in numbers:
+    if num % 2 == 0: # the modulus operator is used to check if the number is even
+        sum += num
+print("The sum of all the even numbers in the list is:", sum)
+
+# -------------------------------------------------------------------
+# 13. Create a list of fruits and add a new fruit to the list
+
+fruits = ["apple", "banana", "orange"]
+new_fruit = "grape"
+fruits.append(new_fruit)
+print(fruits)
+
+
+# -------------------------------------------------------------------
