@@ -16,3 +16,29 @@
 
 """
 
+# -------------------------------------------------------------------
+# 1. Given two dictionaries, merge them into a single dictionary
+
+dict1 = {"a": 1, "b": 2}
+dict2 = {"c": 3, "d": 4}
+
+merged_dict = dict1.copy() # the .copy() method is used to create a copy of the dictionary
+merged_dict.update(dict2) # the .update() method is used to add the key-value pairs from the second dictionary to the first dictionary
+print(merged_dict)
+
+# -------------------------------------------------------------------
+# 2. Write a program that finds the most frequent element in a list
+
+numbers = [1, 2, 3, 4, 1, 1, 2, 3, 4, 5, 1, 2, 3, 1, 5]
+frequency = {} # empty dictionary to store the frequency of each number
+
+for num in numbers:
+    if num in frequency:
+        frequency[num] += 1 # if the number is already in the dictionary it will add one to its count
+    else:
+        frequency[num] = 1 # if the number is not in the dictionary it will be added and set it counts to one '1'
+
+max_count = max(frequency.values()) # the max() method is used to find the maximum value in the dictionary
+most_frequent = [num for num, count in frequency.items() if count == max_count] # the list comprehension is used to find the keys that have the maximum value
+
+print("The most frequent number(s) in the list are:", most_frequent)
