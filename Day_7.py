@@ -75,3 +75,15 @@ print("The dictionary with the highest value for key", key, "is:", max_dict)
 
 # -------------------------------------------------------------------
 # 6. Write a Python program that count the number of ocurrences of each character on a given string using a dictionary
+
+string = "THis is a sample text to check the function"
+char_count = {} # empty dictionary to store the count of each character
+
+for char in string:
+    if char in char_count:
+        char_count[char] += 1 # if the character is already in the dictionary it will add one to its count
+    else:
+        char_count[char] = 1 # if the character is not in the dictionary it will be added and set it counts to one '1'
+
+for char, count in char_count.items():
+    print(f"The count of {char} is: {count}")
