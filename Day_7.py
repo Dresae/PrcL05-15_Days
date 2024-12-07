@@ -42,3 +42,36 @@ max_count = max(frequency.values()) # the max() method is used to find the maxim
 most_frequent = [num for num, count in frequency.items() if count == max_count] # the list comprehension is used to find the keys that have the maximum value
 
 print("The most frequent number(s) in the list are:", most_frequent)
+
+# -------------------------------------------------------------------
+# 3. Implement a function that removes a key-value pair from a dictionary
+
+def remove_key(dictionary, key):
+    if key in dictionary:
+        del dictionary[key] # the del keyword is used to delete the key-value pair from the dictionary
+    return dictionary
+
+dictionary = {"a": 1, "b": 2, "c": 3}
+print(remove_key(dictionary, "b"))
+
+# -------------------------------------------------------------------
+# 4. Create a program that checks if two sets have elements in common
+
+set1 = {1, 2, 3}
+set2 = {3, 4, 5}
+
+if set1.intersection(set2):
+    print("The sets have common elements")
+else:
+    print("The sets have no common elements")
+
+# -------------------------------------------------------------------
+# 5. Given a list of dictionaries, find the dictionary with the highest value for a specific key
+dicts = [{"a": 1, "b": 2}, {"a": 3, "b": 4}, {"a": 5, "b": 6}]
+key = "a"
+max_value = max(dict[key] for dict in dicts) # the max() method is used to find the maximum value in the dictionary
+max_dict = next(dict for dict in dicts if dict[key] == max_value) # the next() method is used to find the dictionary with the maximum value
+print("The dictionary with the highest value for key", key, "is:", max_dict)
+
+# -------------------------------------------------------------------
+# 6. Write a Python program that count the number of ocurrences of each character on a given string using a dictionary
