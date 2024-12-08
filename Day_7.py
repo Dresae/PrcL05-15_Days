@@ -87,3 +87,38 @@ for char in string:
 
 for char, count in char_count.items():
     print(f"The count of {char} is: {count}")
+
+# -------------------------------------------------------------------
+# 7. Given two sets, find the union, intersection, and difference between them
+
+set1 = {1, 2, 3}
+set2 = {3, 4, 5}
+
+union = set1.union(set2) # the union() method is used to find the union of the two sets
+intersection = set1.intersection(set2) # the intersection() method is used to find the intersection of the two sets
+difference = set1.difference(set2) # the difference() method is used to find the difference between the two sets
+
+print("The union of the two sets is:", union)
+print("The intersection of the two sets is:", intersection)
+print("The difference between the two sets is:", difference)
+
+# -------------------------------------------------------------------
+# 8. Create a function that takes a list of numbers and returns a new list with unique elements
+
+def unique_list(numbers):
+    unique = [] # empty list to store the unique elements
+    for num in numbers:
+        if num not in unique:
+            unique.append(num) # the append method is used to add new elements to the list
+    return unique
+
+numbers = [1, 2, 3, 4, 1, 2, 3, 4, 5]
+unique = unique_list(numbers)
+print("The unique elements in the list are:", unique)
+
+# -------------------------------------------------------------------
+# 9. Write a program that checks if a given list is sorted in ascending order
+
+numbers = [1, 2, 3, 4, 5]
+is_sorted = all(numbers[i] <= numbers[i + 1] for i in range(len(numbers) - 1))
+print(is_sorted)
