@@ -122,3 +122,37 @@ print("The unique elements in the list are:", unique)
 numbers = [1, 2, 3, 4, 5]
 is_sorted = all(numbers[i] <= numbers[i + 1] for i in range(len(numbers) - 1))
 print(is_sorted)
+
+# -------------------------------------------------------------------
+# 10. Implement a function that takes a list of strings and returns a set of unique string present in all strings
+
+strings = ["hello", "world", "python"]
+def unique_strings(strings):
+    unique = set() # the set() function is used to create an empty set
+    for string in strings:
+        unique.update(set(string)) # the update() method is used to add new elements to the set
+    return unique
+
+
+unique = unique_strings(strings)
+print("The unique strings in the list are:", unique)
+
+# -------------------------------------------------------------------
+# 11. Create a dictionary to store information about a person(name, age, city)
+
+person = {"name": "John", "age": 30, "city": "New York"}
+print(person)
+
+# -------------------------------------------------------------------
+# 12. Add a new key-value pair to an existing dictionary
+
+person = {"name": "John", "age": 30, "city": "New York"}
+person["gender"] = "male"
+print(person)
+
+# -------------------------------------------------------------------
+# 13. Create a set of unique numbers from a list of numbers
+
+numbers = [1, 2, 3, 4, 1, 2, 3, 4, 5]
+unique = set(numbers)
+print(unique)
