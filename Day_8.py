@@ -16,6 +16,7 @@
 
 """
 # -------------------------------------------------------------------
+"""
 # 1. Write a python program to copy the contents of one text file into another 
 import os
 import pandas as pd
@@ -30,3 +31,22 @@ abs_path2 = os.path.join(dir_path, file_name2) # absolute path for file 2
 
 df = pd.read_csv(abs_path1)
 df.to_csv(abs_path2, index=False) # copying the file content into the file2.txt
+
+"""
+# -------------------------------------------------------------------
+
+# 2. Given a CSV file with students names and scores, find the student with the highest score   
+import os
+import pandas as pd
+
+dir_path = 'sample'
+file_name = 'students_scores.csv'
+abs_path = os.path.join(dir_path, file_name)
+
+df = pd.read_csv(abs_path)
+# max_value = df['Score'].max()
+# max_value = df.nlargest(1, 'Name') 
+max_score = df.loc[df['Score'].idxmax(), 'Name']
+print(max_score)
+
+# -------------------------------------------------------------------
