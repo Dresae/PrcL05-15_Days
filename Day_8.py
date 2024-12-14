@@ -157,3 +157,63 @@ with open(abs_path, 'r') as f:
     print(data[0]['Population'])
     print(data[0]['GDP'])
 '''
+# -------------------------------------------------------------------
+'''
+# 10. Given a CSV file with temperature data for each day of the week, find the average temperature for each day.
+import os
+import pandas as pd
+
+dir_path = 'sample'
+file_name = 'cities_temperature.csv'
+abs_path = os.path.join(dir_path, file_name)
+
+df = pd.read_csv(abs_path)
+average_temp = round(df['Temperature'].mean(), 2)
+print(f"The average temperature for each day is: {average_temp}")
+'''
+# -------------------------------------------------------------------
+'''
+# 11. Write a program that reads a text file and prints its content.
+import os
+
+dir_path = 'sample'
+file_name = 'file2.txt'
+abs_path = os.path.join(dir_path, file_name)
+
+with open(abs_path, 'r') as f:
+    content = f.read()
+    print(content)
+'''
+# -------------------------------------------------------------------
+'''
+# 12. Create a new text file and write some content into it.
+import os
+
+dir_path = 'sample'
+file_name = 'new_file.txt'
+abs_path = os.path.join(dir_path, file_name)
+
+with open(abs_path, 'w') as f:
+    f.write("Hello, world!")
+    print("Content written to file successfully.")
+'''
+# -------------------------------------------------------------------
+'''
+# 13. Implement a program that reads a CSV file and generates a scatter plot that reperesents the data using Matplotlib
+import os
+import pandas as pd
+import matplotlib.pyplot as plt
+
+dir_path = 'sample'
+file_name = 'cities_temperature.csv'
+abs_path = os.path.join(dir_path, file_name)
+
+df = pd.read_csv(abs_path)
+plt.figure(figsize=(10,6))
+plt.scatter(df['City'], df['Temperature'])
+plt.xlabel('City')
+plt.ylabel('Temperature')
+plt.title('Temperature vs City')
+plt.show()
+'''
+# -------------------------------------------------------------------

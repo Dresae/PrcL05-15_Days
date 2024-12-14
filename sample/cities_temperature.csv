@@ -1,0 +1,36 @@
+City,Day,Temperature
+New York,Monday,32
+New York,Tuesday,30
+New York,Wednesday,28
+New York,Thursday,35
+New York,Friday,40
+New York,Saturday,38
+New York,Sunday,42
+Los Angeles,Monday,72
+Los Angeles,Tuesday,75
+Los Angeles,Wednesday,70
+Los Angeles,Thursday,68
+Los Angeles,Friday,73
+Los Angeles,Saturday,71
+Los Angeles,Sunday,74
+Chicago,Monday,20
+Chicago,Tuesday,22
+Chicago,Wednesday,25
+Chicago,Thursday,19
+Chicago,Friday,23
+Chicago,Saturday,21
+Chicago,Sunday,24
+Houston,Monday,55
+Houston,Tuesday,58
+Houston,Wednesday,60
+Houston,Thursday,57
+Houston,Friday,59
+Houston,Saturday,61
+Houston,Sunday,62
+Miami,Monday,80
+Miami,Tuesday,82
+Miami,Wednesday,78
+Miami,Thursday,77
+Miami,Friday,79
+Miami,Saturday,81
+Miami,Sunday,83
