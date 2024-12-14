@@ -37,7 +37,7 @@ import csv
 import pandas as pd
 
 dir_path = 'sample'
-file_name = 'employees_info.csv'
+file_name = 'employees_info.csv' #Located at 'sample' folder
 abs_path = os.path.join(dir_path, file_name)
 df = pd.read_csv(abs_path)
 
