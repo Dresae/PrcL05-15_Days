@@ -1,0 +1,114 @@
+[
+    {
+        "Country": "United States",
+        "Continent": "North America",
+        "Year": 2023,
+        "Population": 331002651,
+        "GDP": 22675271
+    },
+    {
+        "Country": "Canada",
+        "Continent": "North America",
+        "Year": 2023,
+        "Population": 37742154,
+        "GDP": 2100000
+    },
+    {
+        "Country": "Brazil",
+        "Continent": "South America",
+        "Year": 2023,
+        "Population": 212559417,
+        "GDP": 1840000
+    },
+    {
+        "Country": "United Kingdom",
+        "Continent": "Europe",
+        "Year": 2023,
+        "Population": 67886011,
+        "GDP": 3100000
+    },
+    {
+        "Country": "Germany",
+        "Continent": "Europe",
+        "Year": 2023,
+        "Population": 83783942,
+        "GDP": 4200000
+    },
+    {
+        "Country": "China",
+        "Continent": "Asia",
+        "Year": 2023,
+        "Population": 1439323776,
+        "GDP": 17700000
+    },
+    {
+        "Country": "Japan",
+        "Continent": "Asia",
+        "Year": 2023,
+        "Population": 126476461,
+        "GDP": 5000000
+    },
+    {
+        "Country": "India",
+        "Continent": "Asia",
+        "Year": 2023,
+        "Population": 1380004385,
+        "GDP": 3200000
+    },
+    {
+        "Country": "Australia",
+        "Continent": "Oceania",
+        "Year": 2023,
+        "Population": 25499884,
+        "GDP": 1400000
+    },
+    {
+        "Country": "South Africa",
+        "Continent": "Africa",
+        "Year": 2023,
+        "Population": 59308690,
+        "GDP": 350000
+    },
+    {
+        "Country": "Russia",
+        "Continent": "Europe",
+        "Year": 2023,
+        "Population": 145912025,
+        "GDP": 1700000
+    },
+    {
+        "Country": "Mexico",
+        "Continent": "North America",
+        "Year": 2023,
+        "Population": 128932753,
+        "GDP": 1300000
+    },
+    {
+        "Country": "Argentina",
+        "Continent": "South America",
+        "Year": 2023,
+        "Population": 45195777,
+        "GDP": 450000
+    },
+    {
+        "Country": "France",
+        "Continent": "Europe",
+        "Year": 2023,
+        "Population": 65273511,
+        "GDP": 2600000
+    },
+    {
+        "Country": "Italy",
+        "Continent": "Europe",
+        "Year": 2023,
+        "Population": 60244639,
+        "GDP": 2000000
+    },
+    {
+        "Country": "Nigeria",
+        "Continent": "Africa",
+        "Year": 2023,
+        "Population": 206139589,
+        "GDP": 450000
+    }
+]

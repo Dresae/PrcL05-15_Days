@@ -1,0 +1,21 @@
+Department,Date,Customer_ID,Product,Sale_Value
+Electronics,2024-01-15,CUST001,Smartphone,699.99
+Home Appliances,2024-01-16,CUST002,Refrigerator,1299.99
+Clothing,2024-01-17,CUST003,T-Shirt,19.99
+Electronics,2024-01-18,CUST004,Laptop,999.99
+Home Appliances,2024-01-19,CUST005,Washing Machine,499.99
+Toys,2024-01-20,CUST006,Action Figure,14.99
+Electronics,2024-01-21,CUST007,Tablet,299.99
+Clothing,2024-01-22,CUST008,Jacket,89.99
+Home Appliances,2024-01-23,CUST009,Microwave,149.99
+Toys,2024-01-24,CUST010,Board Game,29.99
+Electronics,2024-01-25,CUST011,Smartwatch,199.99
+Clothing,2024-01-26,CUST012,Jeans,49.99
+Home Appliances,2024-01-27,CUST013,Air Conditioner,599.99
+Toys,2024-01-28,CUST014,Doll,24.99
+Electronics,2024-01-29,CUST015,Headphones,89.99
+Home Appliances,2024-01-30,CUST016,Oven,399.99
+Clothing,2024-01-31,CUST017,Sneakers,69.99
+Toys,2024-02-01,CUST018,Building Blocks,39.99
+Electronics,2024-02-02,CUST019,Camera,799.99
+Home Appliances,2024-02-03,CUST020,Blender,59.99

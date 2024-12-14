@@ -90,8 +90,8 @@ average_salary = df['Salary'].mean()
 print(f"The average salary of all employees is: {average_salary}")
 '''
 # -------------------------------------------------------------------
-
-# 6. Write a program that reads a CSV file a and finds the total sales revenue for a specific department
+'''
+# 6. Write a program that reads a CSV file a and finds the total sales amount for a specific department
 import os
 import pandas as pd
 
@@ -100,5 +100,60 @@ file_name = 'sales_info.csv'
 abs_path = os.path.join(dir_path, file_name)
 
 df = pd.read_csv(abs_path)
-total_revenue = df[df['Department'] == 'Sales']['Revenue'].sum()
-print(f"The total sales revenue for the Sales department is: {total_revenue}")
+total_sales = round(df[df['Department'] == 'Electronics']['Sale_Value'].sum(), 2)
+print(f"The total sales amount for Electronics department is: {total_sales}")
+'''
+# -------------------------------------------------------------------
+'''
+# 7. Write a program that reads a CSV file and finds the employee with the highest salary
+import os
+import pandas as pd
+
+dir_path = 'sample'
+file_name = 'employees_info.csv'
+abs_path = os.path.join(dir_path, file_name)
+
+df = pd.read_csv(abs_path)
+max_salary = df['Salary'].max()
+max_salary_employee = df[df['Salary'] == max_salary]['Name'].values[0]
+print(f"The employee with the highest salary is: {max_salary_employee}")
+'''
+
+# -------------------------------------------------------------------
+'''
+# 8. Write a program that reads a CSV file and generates a bar chart that reperesents the data using Matplotlib
+import os
+import pandas as pd
+import matplotlib.pyplot as plt
+
+dir_path = 'sample'
+file_name = 'employees_info.csv'
+abs_path = os.path.join(dir_path, file_name)
+
+df = pd.read_csv(abs_path)
+plt.figure(figsize=(10,6))
+plt.bar(df['ID'], df['Salary'])
+plt.xlabel('ID')
+plt.ylabel('Salary')
+plt.title('Employee Salaries')
+plt.show()
+'''
+# -------------------------------------------------------------------
+
+'''
+# 9. Write a function that reads a JSON file and extracts especific information from it.
+import os
+import pandas as pd
+import json
+
+dir_path = 'sample'
+file_name = 'countries_info.json'
+abs_path = os.path.join(dir_path, file_name)
+
+with open(abs_path, 'r') as f:
+    data = json.load(f)
+    print(data[0]['Year'])
+    print(data[0]['Continent'])
+    print(data[0]['Population'])
+    print(data[0]['GDP'])
+'''
