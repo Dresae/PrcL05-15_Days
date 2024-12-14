@@ -34,7 +34,7 @@ df.to_csv(abs_path2, index=False) # copying the file content into the file2.txt
 
 """
 # -------------------------------------------------------------------
-
+'''
 # 2. Given a CSV file with students names and scores, find the student with the highest score   
 import os
 import pandas as pd
@@ -48,5 +48,57 @@ df = pd.read_csv(abs_path)
 # max_value = df.nlargest(1, 'Name') 
 max_score = df.loc[df['Score'].idxmax(), 'Name']
 print(max_score)
-
+'''
 # -------------------------------------------------------------------
+'''
+# 3. Implement a program that reads a text file and counts the number of words and lines in it.
+import os
+import pandas as pd
+
+dir_path = 'sample'
+file_name = 'file2.txt'
+abs_path = os.path.join(dir_path, file_name)
+
+with open(abs_path, 'r') as f:
+    content = f.read()
+    words = len(content.split())
+    lines = len(content.split('\n'))
+    print(f"The file contains {words} words and {lines} lines.")
+'''
+# -------------------------------------------------------------------
+'''
+# 4. Create a function that takes a list of sentences and writes them to a text file, each on a new line.
+
+def write_to_file(sentences):
+    with open('sentences.txt', 'w') as f:
+        for sentence in sentences:
+            f.write(sentence + '\n')    
+    print("Sentences written to file successfully.")
+'''
+# -------------------------------------------------------------------
+'''
+# 5. Given a CSV file with employee details(name, age salary), calculate the average salary of all employees.
+import os
+import pandas as pd
+
+dir_path = 'sample'
+file_name = 'employees_info.csv'
+abs_path = os.path.join(dir_path, file_name)
+
+df = pd.read_csv(abs_path)
+average_salary = df['Salary'].mean()
+print(f"The average salary of all employees is: {average_salary}")
+'''
+# -------------------------------------------------------------------
+
+# 6. Write a program that reads a CSV file a and finds the total sales revenue for a specific department
+import os
+import pandas as pd
+
+dir_path = 'sample'
+file_name = 'sales_info.csv'
+abs_path = os.path.join(dir_path, file_name)
+
+df = pd.read_csv(abs_path)
+total_revenue = df[df['Department'] == 'Sales']['Revenue'].sum()
+print(f"The total sales revenue for the Sales department is: {total_revenue}")
