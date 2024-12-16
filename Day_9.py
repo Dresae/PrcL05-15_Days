@@ -95,3 +95,19 @@ account.withdraw(200)
 print(account.get_balance())
 '''
 # -------------------------------------------------------------------
+
+# 4. Write a python program that uses a rectangle class to calculate the area and perimeter of a rectangle
+class Rectangle:
+    def __init__(self, length, width):
+        self.length = length
+        self.width = width
+
+    def area(self):
+        return self.length * self.width
+
+    def perimeter(self):
+        return 2 * (self.length + self.width)
+
+rectangle = Rectangle(5, 3)
+print("Area:", rectangle.area())
+print("Perimeter:", rectangle.perimeter())
