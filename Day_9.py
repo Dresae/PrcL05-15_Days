@@ -95,7 +95,7 @@ account.withdraw(200)
 print(account.get_balance())
 '''
 # -------------------------------------------------------------------
-
+'''
 # 4. Write a python program that uses a rectangle class to calculate the area and perimeter of a rectangle
 class Rectangle:
     def __init__(self, length, width):
@@ -111,3 +111,48 @@ class Rectangle:
 rectangle = Rectangle(5, 3)
 print("Area:", rectangle.area())
 print("Perimeter:", rectangle.perimeter())
+'''
+# -------------------------------------------------------------------
+'''
+# 5. Create a class to represent a car with attributes such as make, model, and year.
+class Car:
+    def __init__(self, make, model, year):
+        self.make = make
+        self.model = model
+        self.year = year
+
+car1 = Car("Toyota", "Camry", 2022)
+car2 = Car("Honda", "Civic", 2023)
+car3 = Car("Ford", "Mustang", 2021)
+print(car1.make)
+print(car2.make)
+print(car3.make)
+'''
+
+# -------------------------------------------------------------------
+
+# 6. Given a json file with customer data, create a customer class to store and manipulate the data
+import json
+
+with open('sample/customers_info.json', 'r') as file:
+    data = json.load(file)
+
+class Customer:
+    def __init__(self, name, age, address):
+        self.name = name
+        self.age = age
+        self.address = address
+
+    def __str__(self):
+        return f"Name: {self.name}, Age: {self.age}, Address: {self.address}"
+
+customers = []
+for customer_data in data:
+    name = customer_data['name']
+    age = customer_data['age']
+    address = customer_data['address']
+    customer = Customer(name, age, address)
+    customers.append(customer)
+
+for customer in customers:
+    print(customer)
