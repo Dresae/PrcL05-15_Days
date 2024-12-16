@@ -30,7 +30,7 @@ student2 = Student("Jane", 16, "B")
 print(student1.Name)
 '''
 # -------------------------------------------------------------------
-
+'''
 # 2. Given a csv file with employee details (Name, Id, Profession ,Salary), create a class to represent an employee
 import os
 import csv
@@ -67,6 +67,31 @@ with open(abs_path, 'r') as csvfile:
         employees.append(employee)
 
 print(employees[8]) # print a single object through its index
+'''
+# -------------------------------------------------------------------
+'''
+# 3. Implement a program that simulates a basic bank account using a BankAccount class.
+class BankAccount:
+    def __init__(self, balance):
+        
+        self.balance = balance
 
+    def deposit(self, amount):
+        self.balance += amount
 
+    def withdraw(self, amount):
+        if self.balance >= amount:
+            self.balance -= amount
+        else:
+            print("Insufficient funds")
+
+    def get_balance(self):
+        return self.balance
+    
+
+account = BankAccount(1000)
+account.deposit(500)
+account.withdraw(200)
+print(account.get_balance())
+'''
 # -------------------------------------------------------------------
