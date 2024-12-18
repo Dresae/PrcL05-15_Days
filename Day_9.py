@@ -216,7 +216,7 @@ print("Circumference:", circle.circumference())
 '''
 
 # -------------------------------------------------------------------
-
+'''
 # 9. Given a csv file with product details (Name, Price, Quantity), create a class to manage the data
 import os
 import csv
@@ -251,4 +251,24 @@ for product_data in df.values:
     products.append(product)
 
 print(products[6])
+'''
 
+# -------------------------------------------------------------------
+'''
+# 10. Create a class to represent a movie with attributes such as title, director, and rating.
+class Movie:
+    def __init__(self, title, director, rating):
+        self.title = title
+        self.director = director
+        self.rating = rating
+
+    def __str__(self):
+        return f"{self.title}, {self.director}, {self.rating}"
+    
+movie1 = Movie("The Shawshank Redemption", "Frank Darabont", 9.3)
+movie2 = Movie("The Godfather", "Francis Ford Coppola", 9.2)
+movie3 = Movie("The Dark Knight", "Christopher Nolan", 9.0)
+print(movie1)
+print(movie2)
+print(movie3)
+'''
