@@ -8,7 +8,7 @@
 6. Given a json file with customer data, create a customer class to store and manipulate the data.
 7. Write a prgram that that uses a Person class to track of a person's Name, age and address.
 8. Implement a program that uses a circle class to calculate the area and circumference of a circle.
-9. Given a csv file with product details (Name, price, quantity), create a class to manage the data.
+9. Given a csv file with product details (Name, Price, Quantity), create a class to manage the data.
 10. Create a class to represent a movie with attributes such as title, director, and rating.
 11. Create a class to represent a basic  calculator with add, substract, multiply and divide methods.
 12 Create a class to represent a book with attributes such as title, author, and publication year.
@@ -177,15 +177,15 @@ print(customers[5])
 
 # -------------------------------------------------------------------
 '''
-# 7. Create a class to represent a student with attributes such as name, age, and grade.
+# 7. Create a class to represent a student with attributes such as Name, age, and grade.
 class Student:
-    def __init__(self, name, age, grade):
-        self.name = name
+    def __init__(self, Name, age, grade):
+        self.Name = Name
         self.age = age
         self.grade = grade
 
     def __str__(self):
-        return f"{self.name}, {self.age}, {self.grade}"
+        return f"{self.Name}, {self.age}, {self.grade}"
     
 student1 = Student("Alice", 15, "A")
 student2 = Student("Bob", 16, "B")
@@ -196,7 +196,7 @@ print(student3)
 '''
 
 # -------------------------------------------------------------------
-
+'''
 # 8. Implement a program that uses a circle class to calculate the area and circumference of a circle
 import math
 
@@ -213,3 +213,42 @@ class Circle:
 circle = Circle(5)
 print("Area:", circle.area())
 print("Circumference:", circle.circumference())
+'''
+
+# -------------------------------------------------------------------
+
+# 9. Given a csv file with product details (Name, Price, Quantity), create a class to manage the data
+import os
+import csv
+import pandas as pd
+
+dir_path = 'sample'
+file_name = 'products.csv' #Located at 'sample' folder
+abs_path = os.path.join(dir_path, file_name)
+
+df = pd.read_csv(abs_path)
+
+# class definition
+class Product:
+    def __init__(self, Name, Price, Quantity, Provider):
+        self.Name = Name
+        self.Price = Price
+        self.Quantity = Quantity
+        self.Provider = Provider
+
+    def __str__(self):
+        return f"{self.Name}, {self.Price}, {self.Quantity}, {self.Provider}"
+    
+products = []
+
+for product_data in df.values:
+    product = Product(
+        product_data[0],
+        product_data[1],
+        product_data[2],
+        product_data[3]
+    )
+    products.append(product)
+
+print(products[6])
+
