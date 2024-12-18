@@ -132,27 +132,44 @@ print(car3.make)
 # -------------------------------------------------------------------
 
 # 6. Given a json file with customer data, create a customer class to store and manipulate the data
+import os
 import json
+import pandas as pd
 
-with open('sample/customers_info.json', 'r') as file:
-    data = json.load(file)
+dir_path = 'sample'
+file_name = 'customer_data.json' #Located at 'sample' folder
+abs_path = os.path.join(dir_path, file_name)
 
+with open(abs_path, 'r') as f:
+    data = json.load(f)
+
+df = pd.DataFrame(data)
+
+# class definition
 class Customer:
-    def __init__(self, name, age, address):
-        self.name = name
+    def __init__(self, firstName, lastName, age, address, phoneNumber):
+        self.firstName = firstName
+        self.lastName = lastName
         self.age = age
         self.address = address
+        self.phoneNumber = phoneNumber
 
     def __str__(self):
-        return f"Name: {self.name}, Age: {self.age}, Address: {self.address}"
+        return f"{self.firstName}, {self.lastName}, {self.age}, {self.address}, {self.phoneNumber}"
+    
+with open(abs_path, 'r') as f:
+    data = json.load(f)
 
 customers = []
+
 for customer_data in data:
-    name = customer_data['name']
-    age = customer_data['age']
-    address = customer_data['address']
-    customer = Customer(name, age, address)
+    customer = Customer(
+        customer_data['firstName'],
+        customer_data['lastName'],
+        customer_data['age'],
+        customer_data['address'],
+        customer_data['phoneNumber']
+    )
     customers.append(customer)
 
-for customer in customers:
-    print(customer)
+print(customers[5])

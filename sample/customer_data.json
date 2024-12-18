@@ -1,0 +1,131 @@
+[
+    {
+      "firstName": "Emily",
+      "lastName": "Wong",
+      "age": 32,
+      "address": {
+        "streetAddress": "123 Main St",
+        "city": "Anytown",
+        "state": "CA",
+        "postalCode": "12345"
+      },
+      "phoneNumber": ["home: 555-1234", "fax: 555-5678"]
+    },
+
+    {
+      "firstName": "David",
+      "lastName": "Lee",
+      "age": 41,
+      "address": {
+        "streetAddress": "456 Elm St",
+        "city": "Othertown",
+        "state": "TX",
+        "postalCode": "67890"
+      },
+      "phoneNumber": ["home: 555-9012", "cell: 555-1111"]
+    },
+
+    {
+      "firstName": "Sarah",
+      "lastName": "Kim",
+      "age": 28,
+      "address": {
+        "streetAddress": "789 Oak St",
+        "city": "Thistown",
+        "state": "FL",
+        "postalCode": "34567"
+      },
+      "phoneNumber": ["home: 555-3333", "work: 555-2222"]
+    },
+
+    {
+      "firstName": "Michael",
+      "lastName": "Garcia",
+      "age": 38,
+      "address": {
+        "streetAddress": "321 Maple St",
+        "city": "Anothertown",
+        "state": "IL",
+        "postalCode": "90123"
+      },
+      "phoneNumber": ["home: 555-5555", "fax: 555-8888"]
+    },
+
+    {
+      "firstName": "John",
+      "lastName": "Doe",
+      "age": 30,
+      "address": {
+        "streetAddress": "123 Main St",
+        "city": "Anytown",
+        "state": "CA",
+        "postalCode": "12345"
+      },
+      "phoneNumber": ["home: 555-1234", "fax: 555-5678"]
+    },
+
+    {
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "age": 25,
+      "address": {
+        "streetAddress": "456 Elm St",
+        "city": "Othertown",
+        "state": "TX",
+        "postalCode": "67890"
+      },
+      "phoneNumber": ["home: 555-9012", "cell: 555-1111"]
+    },
+
+    {
+      "firstName": "Bob",
+      "lastName": "Johnson",
+      "age": 35,
+      "address": {
+        "streetAddress": "789 Oak St",
+        "city": "Thistown",
+        "state": "FL",
+        "postalCode": "34567"
+      },
+      "phoneNumber": ["home: 555-3333", "work: 555-2222"]
+    },
+
+    {
+      "firstName": "Alice",
+      "lastName": "Williams",
+      "age": 40,
+      "address": {
+        "streetAddress": "321 Maple St",
+        "city": "Anothertown",
+        "state": "IL",
+        "postalCode": "90123"
+      },
+      "phoneNumber": ["home: 555-5555", "fax: 555-8888"]
+    },
+
+    {
+      "firstName": "Charlie",
+      "lastName": "Brown",
+      "age": 45,
+      "address": {
+        "streetAddress": "123 Main St",
+        "city": "Anytown",
+        "state": "CA",
+        "postalCode": "12345"
+      },
+      "phoneNumber": ["home: 555-1234", "fax: 555-5678"]
+    },
+
+    {
+      "firstName": "Joe",
+      "lastName": "Daniel",
+      "age": 55,
+      "address": {
+        "streetAddress": "111 Joke St",
+        "city": "Anytown",
+        "state": "CA",
+        "postalCode": "33355"
+      },
+      "phoneNumber": ["home: 555-1035", "fax: 555-5024"]
+    }
+  ]
