@@ -176,7 +176,7 @@ print(customers[5])
 '''
 
 # -------------------------------------------------------------------
-
+'''
 # 7. Create a class to represent a student with attributes such as name, age, and grade.
 class Student:
     def __init__(self, name, age, grade):
@@ -193,3 +193,23 @@ student3 = Student("Charlie", 14, "C")
 print(student1)
 print(student2)
 print(student3)
+'''
+
+# -------------------------------------------------------------------
+
+# 8. Implement a program that uses a circle class to calculate the area and circumference of a circle
+import math
+
+class Circle:
+    def __init__(self, radius):
+        self.radius = radius
+
+    def area(self):
+        return round(math.pi * self.radius ** 2, 2)
+
+    def circumference(self):
+        return round(2 * math.pi * self.radius, 2)
+
+circle = Circle(5)
+print("Area:", circle.area())
+print("Circumference:", circle.circumference())
