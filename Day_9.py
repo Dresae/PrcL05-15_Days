@@ -274,7 +274,7 @@ print(movie3)
 '''
 
 # -------------------------------------------------------------------
-
+'''
 # 11. Create a class to represent a basic  calculator with add, substract, multiply and divide methods.
 class Calculator:
     def __init__(self, num1, num2):
@@ -298,3 +298,23 @@ print(calculator.add())
 print(calculator.subtract())
 print(calculator.multiply())
 print(calculator.divide())
+'''
+
+# -------------------------------------------------------------------
+'''
+# 12. Create a class to represent a book with attributes such as title, author, and publication year.
+class Book:
+    def __init__(self, title, author, publication_year):
+        self.title = title
+        self.author = author
+        self.publication_year = publication_year
+
+    def __str__(self):
+        return f"{self.title}, {self.author}, {self.publication_year}"
+    
+book1 = Book("The Great Gatsby", "F. Scott Fitzgerald", 1925)
+book2 = Book("To Kill a Mockingbird", "Harper Lee", 1960)
+
+print(book1)
+print(book2)
+'''
