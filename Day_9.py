@@ -130,7 +130,7 @@ print(car3.make)
 '''
 
 # -------------------------------------------------------------------
-
+'''
 # 6. Given a json file with customer data, create a customer class to store and manipulate the data
 import os
 import json
@@ -173,3 +173,23 @@ for customer_data in data:
     customers.append(customer)
 
 print(customers[5])
+'''
+
+# -------------------------------------------------------------------
+
+# 7. Create a class to represent a student with attributes such as name, age, and grade.
+class Student:
+    def __init__(self, name, age, grade):
+        self.name = name
+        self.age = age
+        self.grade = grade
+
+    def __str__(self):
+        return f"{self.name}, {self.age}, {self.grade}"
+    
+student1 = Student("Alice", 15, "A")
+student2 = Student("Bob", 16, "B")
+student3 = Student("Charlie", 14, "C")
+print(student1)
+print(student2)
+print(student3)
