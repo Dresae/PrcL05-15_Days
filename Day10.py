@@ -17,6 +17,7 @@
 """
 
 # -------------------------------------------------------------------  
+"""
 # 1. Create a base class named my_sape with methods to calculate area and perimeter, and derive class Circle and Square.
 import math
 
@@ -52,3 +53,64 @@ print(circle.calculate_perimeter())
 
 print(square.calculate_area()) 
 print(square.calculate_perimeter())  
+"""
+
+# -------------------------------------------------------------------
+"""
+# 2. Implement a class hierarchy to represent different types of employees(Manager, Engineer) with their attributes
+
+class Employee:
+    def __init__(self, name, position, salary):
+        self.name = name
+        self.position = position
+        self.salary = salary    
+
+class Manager(Employee):
+    pass
+
+class Engineer(Employee):
+    pass
+"""
+# -------------------------------------------------------------------
+
+# 3. Write a python program thet uses inheritance to represent a hierarchy of shapes(triangle, rectangle, etc)
+import math
+
+class Shape:
+    def area(self):
+        pass
+    def perimeter(self):
+        pass    
+
+class Triangle(Shape):
+    def __init__(self, side1, side2, side3):
+        self.side1 = side1
+        self.side2 = side2
+        self.side3 = side3
+
+    def area(self):
+        s = (self.side1 + self.side2 + self.side3) / 2
+        return round(math.sqrt(s * (s - self.side1) * (s - self.side2) * (s - self.side3)), 2)
+    def perimeter(self):
+        return round(self.side1 + self.side2 + self.side3, 2)
+
+class Rectangle(Shape):
+    def __init__(self, length, width):
+        self.length = length
+        self.width = width
+
+    def area(self):
+        return round(self.length * self.width, 2)
+    def perimeter(self):
+        return round(2 * (self.length + self.width), 2)
+
+triangle = Triangle(3.6, 4, 5)
+rectangle = Rectangle(6, 7.8)
+
+print(triangle.area()) 
+print(triangle.perimeter())  
+
+print(rectangle.area()) 
+print(rectangle.perimeter())
+
+
