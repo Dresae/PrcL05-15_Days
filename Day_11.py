@@ -114,9 +114,82 @@ print("Squared array is:", squared_array)
 # -------------------------------------------------------------------
 
 # 8. Given a Numpy array, calculate the dot product with the array with itself
-
+"""
 import numpy as np
-my_array = np.array([3, 4, 5, 6, 7, 8, 9])
-dot_product = np.dot(my_array, my_array)
+my_array_1 = np.array([3, 4, 5, 6])
+my_array_2 = np.array([2, 6, 5, 3])
+dot_product = np.dot(my_array_1, my_array_2)
 
 print("The dot product is:", dot_product)
+"""
+# -------------------------------------------------------------------
+
+# 9. Create a program that uses Numpy to calculate the inverse of a 2X2 matrix
+"""
+import numpy as np
+my_array = np.array([[1, 2], [3, 4]])
+inverse_array = np.linalg.inv(my_array)
+
+print("The inverse of the matrix is:", inverse_array)
+"""
+
+# -------------------------------------------------------------------
+
+# 10. Implement a function that takes a Numpy array and returns the transpose of the array 
+"""
+import numpy as np
+my_array = np.array([[1, 2, 6], [3, 4, 2], [2, 6, 3]])
+transpose_array = np.transpose(my_array)
+
+print("The transpose of the matrix is:", "\n", transpose_array)
+"""
+# -------------------------------------------------------------------
+
+# 11. Create a Numpy array for a python list and perform basic operations like addition, subtraction, multiplication and division
+"""
+import numpy as np
+list_1 = [3, 4, 5, 6]
+list_1_array = np.array(list_1)
+
+list_2 = [2, 6, 5, 3]
+list_2_array = np.array(list_2)
+
+addition_array = list_1_array + list_2_array
+subtraction_array = list_1_array - list_2_array
+multiplication_array = list_1_array * list_2_array
+division_array = list_1_array / list_2_array
+
+print("The addition of the arrays is:", addition_array)
+print("The subtraction of the arrays is:", subtraction_array)
+print("The multiplication of the arrays is:", multiplication_array)
+print("The division of the arrays is:", division_array)
+"""
+# -------------------------------------------------------------------
+
+# 12. Generate a Numpy array with random numbers and calculate its mean, median and standard deviation
+"""
+import numpy as np
+my_array = np.random.uniform(low=3, high=15, size=(6, 4))
+mean_value = np.mean(my_array)
+median_value = np.median(my_array)
+std_value = np.std(my_array)
+
+print("'my_array' = ", "\n", my_array, "\n")
+print("Array Mean:", round(mean_value, 4)) 
+print("Array Median:", round(median_value, 4))
+print("Array Standard Deviation:", round(std_value, 4)) 
+"""
+# -------------------------------------------------------------------
+
+# 13. Create a Numpy array and reshape it into a different shape  
+"""
+import numpy as np
+my_array = np.random.random(28)
+reshaped_array = my_array.reshape(14, 2)
+
+print("Original array is:", my_array, "\n")
+print("Reshaped array is:", "\n", reshaped_array)
+"""
+# -------------------------------------------------------------------
+
+
