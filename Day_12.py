@@ -69,7 +69,7 @@ print(f"Minimum value in the 'Salary' column is: {min_value}")
 """
 
 # -------------------------------------------------------------------
-
+"""
 # 4. Create a function that takes a Pandas dataframe and returns a new dataframe with rows sorted in ascending order.
 
 import pandas as pd
@@ -83,3 +83,91 @@ def sort_dataframe(df):
 sorted_df = sort_dataframe(df)
 
 print(sorted_df)
+"""
+# -------------------------------------------------------------------
+"""
+# 5. Given a Pandas dataframe, filter the rows to include only the rows where a speficic column meets a condition
+
+import pandas as pd 
+
+df = pd.DataFrame({'Name': ['Alice', 'Bob', 'Charlie', 'David'], 'Age': [25, 30, 35, 40]})
+filtered_df = df[df['Age'] >= 30]
+
+print(filtered_df) 
+"""
+# -------------------------------------------------------------------
+"""
+# 6. Implement  a program that reads a CSV file into a Pandas dataframe and finds the sum of a specific column
+
+import os
+import pandas as pd
+
+dir_path = 'sample'
+file_name = 'products.csv'
+abs_path = os.path.join(dir_path, file_name)
+
+df = pd.read_csv(abs_path)
+Quantity_sum = df['Quantity'].sum()
+
+print(f"The total products stock is: {Quantity_sum}")
+"""
+# -------------------------------------------------------------------
+"""
+# 7. Write a function that takes a Pandas dataframe and adds a new calculated column to the dataframe
+
+import pandas as pd
+
+df = pd.DataFrame({'Name': ['Alice', 'Bob', 'Charlie', 'David'], 'Age': [25, 30, 35, 40]})
+df2 = df.copy()
+
+def add_calculated_column(df2):
+    df2['Calculated'] = df2['Age'] * 2
+    return df2
+
+df_added = add_calculated_column(df2)
+
+print("Initial DataFrame: ", '\n',df,'\n')
+print("New DataFrame: ", '\n', df_added)
+"""
+
+# -------------------------------------------------------------------
+"""
+# 8. Given a Pandas dataframe, group the data by a specific column and calculate the mean of another column
+
+import os
+import pandas as pd 
+
+dir_path = 'sample'
+file_name = 'autoparts_sales.csv'
+abs_path = os.path.join(dir_path, file_name)
+df = pd.read_csv(abs_path)
+
+# 1. Define calculated columns
+df['Sales_Total'] = df['Units_Sold'] * df['Unit_Price']
+df['Sales_AVG'] = df['Sales_Total'] / df['Units_Sold']
+df['Profit_Margin_AVG(%)'] = ((df['Sales_Profit'] / df['Sales_Total']) * 100)
+
+# 2. Group the data by Product and calculate the mean of Quantity, Cost and Profit
+KPI_Table = df.groupby('Sales_Person').agg({'Units_Sold': 'sum', 'Sales_Total': 'sum', 'Sales_AVG': 'mean',  'Sales_Profit': 'sum', 'Profit_Margin_AVG(%)': 'mean'})
+
+print("Sales Report: ", '\n', KPI_Table)
+"""
+
+# -------------------------------------------------------------------
+
+# 9. Create a program that reads a JSON file to a Pandas dataframe and extracts specific information from it
+
+import os
+import pandas as pd 
+
+dir_path = 'sample'
+file_name = 'countries_info.json'
+abs_path = os.path.join(dir_path, file_name)
+
+df = pd.read_json(abs_path)
+extracted_data = df.sort_values(by='GDP', ascending=False)[['Country', 'GDP']]
+
+print("Countries GDP: ", "\n", extracted_data)
+
+# -------------------------------------------------------------------
+

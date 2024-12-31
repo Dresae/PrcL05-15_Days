@@ -1,0 +1,31 @@
+Product ID,Product Name,Category,Manufacturer,Stock Quantity,Sales_Person,Date_Sale,Unit_Price,SKU,Units_Sold,Sales_Profit
+101,Brake Pad,Brakes,AutoPro Inc.,350,John Smith,2024-01-15,25,BP-1234,10,100
+102,Spark Plug,Engine,EngineMax,200,Sarah Lee,2024-01-16,15,SP-5678,15,75
+103,Oil Filter,Engine,FilterKing,500,Tom Brown,2024-01-17,10,OF-9123,20,60
+104,Suspension Arm,Suspension,AutoFlex,120,Alice Green,2024-01-18,150,SA-3456,5,300
+105,Headlight Bulb,Lighting,BrightBeam,600,Karen White,2024-01-19,8,HB-7890,25,50
+106,Radiator,Cooling,CoolParts,80,John Smith,2024-01-20,250,RA-4321,2,200
+107,Wiper Blade,Accessories,AutoPro Inc.,300,Sarah Lee,2024-01-21,12,WB-6789,18,72
+108,Air Filter,Engine,FilterKing,400,Tom Brown,2024-01-22,20,AF-1357,12,96
+109,Fuel Pump,Engine,EngineMax,150,Alice Green,2024-01-23,180,FP-2468,6,540
+110,Clutch Plate,Gearbox,AutoFlex,100,Karen White,2024-01-24,220,CP-3579,4,440
+111,Brake Disc,Brakes,AutoPro Inc.,250,John Smith,2024-01-25,75,BD-4680,8,320
+112,Alternator,Electrical,EngineMax,90,Sarah Lee,2024-01-26,300,AL-5791,3,450
+113,Timing Belt,Engine,FilterKing,200,Tom Brown,2024-01-27,50,TB-6802,10,200
+114,Exhaust Pipe,Exhaust,SystemParts,150,Alice Green,2024-01-28,100,EP-7913,7,280
+115,Steering Wheel,Accessories,BrightBeam,50,Karen White,2024-01-29,180,SW-8024,2,360
+116,Wheel Bearing,Suspension,AutoFlex,120,John Smith,2024-01-30,90,WB-9135,6,180
+117,Shock Absorber,Suspension,AutoFlex,100,Sarah Lee,2024-01-31,120,SA-0246,5,240
+118,Bumper Cover,Body,AutoPro Inc.,80,Tom Brown,2024-02-01,250,BC-1357,3,450
+119,Ignition Coil,Electrical,EngineMax,200,Alice Green,2024-02-02,60,IC-2468,12,180
+120,Engine Mount,Engine,FilterKing,150,Karen White,2024-02-03,95,EM-3579,8,240
+121,Air Conditioning Compressor,Cooling,CoolParts,60,John Smith,2024-02-04,320,AC-4680,2,480
+122,Fan Belt,Engine,FilterKing,500,Sarah Lee,2024-02-05,35,FB-5791,14,140
+123,Window Regulator,Accessories,BrightBeam,200,Tom Brown,2024-02-06,45,WR-6802,10,150
+124,Power Steering Pump,Hydraulics,AutoFlex,75,Alice Green,2024-02-07,180,PS-7913,4,360
+125,Muffler,Exhaust,SystemParts,100,Karen White,2024-02-08,85,MU-8024,6,180
+126,Side Mirror,Body,AutoPro Inc.,200,John Smith,2024-02-09,50,SM-9135,20,200
+127,Battery,Electrical,EngineMax,90,Sarah Lee,2024-02-10,120,BA-0246,8,320
+128,Gasket Set,Engine,FilterKing,300,Tom Brown,2024-02-11,25,GS-1357,15,75
+129,Turbocharger,Engine,EngineMax,50,Alice Green,2024-02-12,600,TC-2468,1,300
+130,Car Jack,Tools,BrightBeam,150,Karen White,2024-02-13,75,CJ-3579,5,200
