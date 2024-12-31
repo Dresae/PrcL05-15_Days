@@ -154,7 +154,7 @@ print("Sales Report: ", '\n', KPI_Table)
 """
 
 # -------------------------------------------------------------------
-
+"""
 # 9. Create a program that reads a JSON file to a Pandas dataframe and extracts specific information from it
 
 import os
@@ -168,6 +168,45 @@ df = pd.read_json(abs_path)
 extracted_data = df.sort_values(by='GDP', ascending=False)[['Country', 'GDP']]
 
 print("Countries GDP: ", "\n", extracted_data)
-
+"""
 # -------------------------------------------------------------------
+"""
+# 10. Implement a function that takes a Pandas dataframe and returns the transpose of the dataframe
+
+import pandas as pd
+
+data = {
+    'Computer': [2500, 3400, 3400, 680],
+    'Laptop': [1500, 1750, 2000, 2500],
+    'Tablet': [800, 900, 1000, 1200],
+    'Smartphone': [500, 600, 700, 800]
+}
+months = ['January', 'February', 'March', 'April']
+df = pd.DataFrame(data, index=months)
+
+
+def transpose_dataframe(df):
+    return df.T
+df_transposed = transpose_dataframe(df)
+
+print("Original DataFrame: ", '\n', df, '\n')
+print("Transpose DataFrame: ", '\n', df_transposed)
+"""
+# -------------------------------------------------------------------
+"""
+# 11. Create a Pandas series from a list and perform basic operations like filtering, sorting,etc
+
+import pandas as pd
+
+my_list = [0.548, 0.35, 0.025, 0.1052, 0.0548, 0.24, 0.8025, 0.0245, 0.152, 0.245]
+series = pd.Series(my_list)
+
+print("ORIGINAL SERIES: ", '\n', series, '\n')
+
+filtered = series[series > 0.14].sort_values()
+print("FILTERED SERIES: ", '\n', filtered, '\n') # Series with values greater than 0.14
+
+sorted = series.sort_values(ascending=False)
+print("SORTED SERIES: ", '\n', sorted, '\n')    # Series sorted in descending order
+"""
 
