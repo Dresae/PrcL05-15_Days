@@ -210,3 +210,53 @@ sorted = series.sort_values(ascending=False)
 print("SORTED SERIES: ", '\n', sorted, '\n')    # Series sorted in descending order
 """
 
+# -------------------------------------------------------------------
+"""
+# 12. Read a CSV file into a Pandas dataframe and perform basic data manipulation operations
+
+import os
+import pandas as pd
+
+dir_path = 'sample'
+file_name = 'employees_info.csv'
+abs_path = os.path.join(dir_path, file_name)
+
+df = pd.read_csv(abs_path)
+
+print("ORIGINAL DATAFRAME: ", '\n', df, '\n')
+
+def add_initials_column(df, name_column):
+    # Extract initials
+    df['initials'] = df[name_column].apply(lambda x: ''.join([name[0].upper() for name in x.split() if name]))
+    return df
+
+# Adding initials column
+df_with_initials = add_initials_column(df, 'Name')
+
+print(df_with_initials)
+"""
+# -------------------------------------------------------------------
+
+# 13. Create a Pandas dataframe from a dictionary and perform filtering and grouping operations
+
+import pandas as pd
+
+data = {
+    'Name': ['Alice', 'Bob', 'Charlie', 'David', 'Eva'],
+    'Age': [25, 30, 35, 40, 45],
+    'Salary': [50000, 60000, 70000, 80000, 90000],
+    'Dept': ['HR', 'IT', 'Finance', 'HR', 'IT']
+}
+
+df = pd.DataFrame(data)
+
+print("ORIGINAL DATAFRAME: ", '\n', df, '\n')
+
+filtered = df[df['Age'] > 30]
+grouped = df.groupby('Dept').agg({'Salary': 'sum'})
+
+
+print("FILTERED DATAFRAME: ", '\n', filtered, '\n')
+print("GROUPED DATAFRAME: ", '\n', grouped, '\n')
+
+# -------------------------------------------------------------------
