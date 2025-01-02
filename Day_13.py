@@ -16,3 +16,31 @@
 13. Generate a bar plot using Seaborn to compare the categories in a dataset.
 
 """
+
+# -------------------------------------------------------------------
+
+# 1. Given a Pandas Dataframe, create a line plot to visualize the trend of a specific column over time.
+
+import os
+import pandas as pd
+import matplotlib.pyplot as plt
+
+dir_path = 'sample'
+file_name = 'autopart_sales.csv'
+abs_path = os.path.join(dir_path, file_name)
+
+df = pd.read_csv(abs_path)
+df = df[['Product_Name', 'Units_Sold', 'Sales_Person', 'Sale_Date','Sales_Profit']]
+
+df['Sale_Date'] = pd.to_datetime(df['Sale_Date']) # set the column as datetime data type
+df['Month'] = df['Sale_Date'].dt.strftime('%b') # convert to month name 
+
+df.plot(x='Month',y='Units_Sold', kind='line')
+plt.title('Sales Trend For FY-2024')
+plt.xlabel('FY-2024')
+plt.ylabel('Units Sold')
+plt.show()
+
+#print(df)
+
+# -------------------------------------------------------------------
