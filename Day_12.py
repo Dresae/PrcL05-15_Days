@@ -236,7 +236,7 @@ df_with_initials = add_initials_column(df, 'Name')
 print(df_with_initials)
 """
 # -------------------------------------------------------------------
-
+"""
 # 13. Create a Pandas dataframe from a dictionary and perform filtering and grouping operations
 
 import pandas as pd
@@ -258,5 +258,5 @@ grouped = df.groupby('Dept').agg({'Salary': 'sum'})
 
 print("FILTERED DATAFRAME: ", '\n', filtered, '\n')
 print("GROUPED DATAFRAME: ", '\n', grouped, '\n')
-
+"""
 # -------------------------------------------------------------------
